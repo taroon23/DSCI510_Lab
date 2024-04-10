@@ -6,7 +6,7 @@ df = pd.read_csv("car_data.csv")
 
 # Sidebar
 st.sidebar.title("Filters")
-car_name_input = st.sidebar.text_input("Car Name (Optional)")
+car_name_input = st.sidebar.text_input("Car Name")
 transmission_options = st.sidebar.multiselect("Transmission", ["Manual", "Automatic"], default=["Manual", "Automatic"])
 selling_price_range = st.sidebar.slider("Selling Price Range", 0, 100, (0, 20))
 year_range = st.sidebar.slider("Year Range", 2000, 2024, (2000, 2024))
